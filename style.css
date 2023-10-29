@@ -13,7 +13,7 @@
   --persian-blue-circle: hsla(241, 72%, 46%, 0);
 
   --white: hsl(0, 0%, 100%);
-  --pale-blue: hsl(221, 100%, 96%);
+  --pale-blue: hsl(222, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
 }
@@ -31,13 +31,33 @@ main {
   min-height: 100vh;
 }
 
+h1 {
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--white);
+  margin-top: 55px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 38px;
+}
+
+p {
+  font-size: 18px;
+}
+
 .card {
   display: flex;
-  flex-wrap: wrap;
-
   width: 736px;
   height: 512px;
-
   background-color: var(--white);
   border-radius: 32px;
   box-shadow: 0px 30px 60px 0px hsla(224, 82%, 58%, 0.15);
@@ -46,28 +66,89 @@ main {
 .result {
   flex: 50%;
   border-radius: 32px;
-
   background: linear-gradient(
     var(--light-slate-blue-bg),
     var(--light-royal-blue-bg)
   );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.result h3 {
+  color: var(--light-lavender);
+}
+.result p {
+  color: var(--light-lavender);
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(
+    var(--violet-blue-circle),
+    var(--persian-blue-circle)
+  );
+
+  margin-top: 35px;
+}
+
+.caption {
+  width: 260px;
+  margin-top: 28px;
+}
+.caption p {
+  margin-top: 14px;
 }
 
 .summary {
   flex: 50%;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 800px) {
+  h1 {
+    margin-top: 25px;
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    margin-top: 24px;
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
   .card {
     width: 100%;
     height: 809px;
+    position: absolute;
+    top: 0px;
+    flex-direction: column;
   }
+
   .result {
-    flex: 100%;
     border-radius: 0 0 32px 32px;
+    flex: 44%;
+  }
+
+  .circle {
+    width: 140px;
+    height: 140px;
+    margin-top: 24px;
+  }
+
+  .caption {
+    margin-top: 24px;
+  }
+  .caption p {
+    margin-top: 8px;
   }
 
   .summary {
-    flex: 100%;
+    flex: 56%;
   }
 }
