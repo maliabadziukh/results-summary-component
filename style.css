@@ -138,6 +138,7 @@ p {
 
 .user-score {
   color: var(--dark-gray-blue);
+  font-weight: 700;
 }
 
 .Reaction {
