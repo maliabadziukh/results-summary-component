@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const icon = document.createElement('img');
         icon.src = item.icon;
+        icon.alt = '';
 
         const category = document.createElement('p');
         category.classList.add('category');
