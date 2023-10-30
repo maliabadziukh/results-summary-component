@@ -105,7 +105,7 @@ p {
 
 .summary {
   flex: 50%;
-  margin-inline: 40px;
+  padding-inline: 40px;
 }
 
 .summary h3 {
@@ -237,6 +237,7 @@ button:hover {
     flex: 56%;
     align-self: center;
     width: 315px;
+    padding-inline: 0;
   }
 
   .breakdown {
