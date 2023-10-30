@@ -105,6 +105,91 @@ p {
 
 .summary {
   flex: 50%;
+  margin-inline: 40px;
+}
+
+.summary h3 {
+  color: var(--dark-gray-blue);
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 272px;
+  margin-top: 28px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-radius: 12px;
+  padding-inline: 16px;
+}
+
+.category {
+  margin-left: 12px;
+}
+
+.score {
+  margin-left: auto;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.user-score {
+  color: var(--dark-gray-blue);
+}
+
+.Reaction {
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.Reaction > .category {
+  color: var(--light-red);
+}
+
+.Memory {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.Memory > .category {
+  color: var(--orangey-yellow);
+}
+
+.Verbal {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.Verbal > .category {
+  color: var(--green-teal);
+}
+
+.Visual {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.Visual > .category {
+  color: var(--cobalt-blue);
+}
+
+button {
+  margin-top: 41px;
+  display: block;
+  width: 100%;
+  height: 56px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 128px;
+  border: none;
+  background: var(--dark-gray-blue);
+}
+
+button:hover {
+  background: linear-gradient(
+    var(--light-slate-blue-bg),
+    var(--light-royal-blue-bg)
+  );
 }
 
 @media screen and (max-width: 800px) {
@@ -150,5 +235,15 @@ p {
 
   .summary {
     flex: 56%;
+    align-self: center;
+    width: 315px;
+  }
+
+  .breakdown {
+    margin-top: 24px;
+  }
+
+  button {
+    margin-top: 24px;
   }
 }

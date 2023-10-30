@@ -6,13 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       data.forEach((item) => {
         const div = document.createElement('div');
-        div.classList.add('category');
+        div.classList.add('item');
         div.classList.add(`${item.category}`);
 
         const icon = document.createElement('img');
         icon.src = item.icon;
 
         const category = document.createElement('p');
+        category.classList.add('category');
         category.textContent = item.category;
 
         const scoreContainer = document.createElement('p');
